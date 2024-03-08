@@ -1,6 +1,6 @@
 # wan wan
 
-[Use English](README.md)
+[Use English](https://replit.com/@BachDavis/Wan-Wan#README.md)
 
 o wan e nimi tan tomo e nimi sin a! o alasa alasa pini e ona ale a!
 

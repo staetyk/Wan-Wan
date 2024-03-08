@@ -1,6 +1,6 @@
 # Wan Wan
 
-[kepeken toki pona](OLUKINEMI.md)
+[kepeken toki pona](https://replit.com/@BachDavis/Wan-Wan#OLUKINEMI.md)
 
 Combine words to make more words! Try to find them all!
 
