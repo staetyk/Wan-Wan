@@ -57,6 +57,7 @@ kiwen,telo,ko
 ante,toki,kokosila
 ijo,sewi,kon
 seli,telo,kon
+kon,mesikeke,konwe
 lipu,nimi,ku
 lipu,tu,ku
 kipisi,walo,kule
@@ -110,6 +111,7 @@ ala,sinpin,monsi
 nasin,pini,monsi
 ala,wawa,monsuta
 kalama,soweli,mu
+moku,sike,mulapisu
 pini,tenpo,mun
 ilo,pona,musi
 pilin,pona,musi
@@ -138,6 +140,8 @@ musi,uta,ojuta
 musi,sike,ojuta
 o,uta,ojuta
 lon,nimi,oke
+majuna,oke,okepuma
+ante,oke,oki
 lukin,ilo,oko
 lukin,sike,oko
 pakala,pilin,olin
@@ -147,6 +151,7 @@ ante,jan,ona
 ala,pini,open
 nasa,wawa,osawi
 ala,kulupu,pakala
+pakala,pakala,pakola
 ala,lape,pali
 kiwen,suli,palisa
 kasi,ma,pan
@@ -168,6 +173,8 @@ lipu,wan,pu
 pona,toki,pu
 pona,sitelen,pu
 ala,ante,sama
+nimi,wile,samu
+nimisin,wile,samu
 a,pakala,seli
 ala,lete,seli
 pilin,suno,seli
@@ -219,9 +226,11 @@ ma,moli,utala
 ala,pimeja,walo
 ala,mute,wan
 kon,soweli,waso
+soweli,waso,wasoweli
 ala,monsuta,wawa
 jan,mani,wawa
 mute,utala,wawa
+ala,wuwojiti,wawajete
 ala,lon,weka
 ante,tawa,weka
 nasin,wan,wile
