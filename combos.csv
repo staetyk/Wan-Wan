@@ -112,6 +112,7 @@ anpa,sewi,meso
 jan,wan,mi
 ala,meli,mije
 jan,palisa,mije
+monsi,soweli,misa
 ijo,uta,moku
 ale,lape,moli
 ali,lape,moli
@@ -125,7 +126,7 @@ moku,sike,mulapisu
 pini,tenpo,mun
 ilo,pona,musi
 pilin,pona,musi
-pona,selo,musi
+pona,supa,musi
 ala,wan,mute
 ijo,ijo,mute
 nimi,sona,n
@@ -180,6 +181,7 @@ ala,insa,poka
 ilo,insa,poki
 musi,palisa,polinpin
 ala,ike,pona
+soweli,suli,poni
 lon,weka,powe
 lipu,toki,pu
 lipu,wan,pu
@@ -219,6 +221,8 @@ lipu,ma,supa
 lawa,soweli,sutopatikuna
 ala,jaki,suwi
 moku,pona,suwi
+awen,kulupu,taki
+awen,poka,taki
 mama,nimi,tan
 ante,nimi,taso
 noka,pali,tawa
@@ -238,6 +242,9 @@ kulupu,lape,unpa
 ijo,toki,uta
 kalama,moli,utala
 ma,moli,utala
+epiku,nimi,wa
+kulijo,nimi,wa
+selo,toki,waleja
 ala,pimeja,walo
 ala,mute,wan
 kon,soweli,waso
