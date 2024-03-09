@@ -25,11 +25,15 @@ kulupu,nimi,en
 mute,pona,epiku
 mani,pana,esun
 mani,tomo,esun
+namako,tawa,ete
+sin,tawa,ete
+kiwen,ma,ewe
 ala,pona,ike
 pilin,telo,ike
 ijo,kepeken,ilo
 ijo,pali,ilo
 meso,nasin,insa
+insa,toki,isipin
 ala,suwi,jaki
 moku,tenpo,jaki
 sona,soweli,jan
@@ -45,6 +49,7 @@ ni,tawa,kama
 ma,soweli,kasi
 nasin,ni,ken
 ala,weka,kepeken
+jan,kule,kese
 musi,soweli,kijetesantakalu
 leko,lili,kiki
 kasi,moku,kili
@@ -82,6 +87,8 @@ kulupu,sona,linluwi
 ilo,sona,lipu
 kili,kule,loje
 ala,ala,lon
+la,u,lu
+li,u,lu
 ala,noka,luka
 jan,nasa,luka
 noka,sewi,luka
@@ -132,6 +139,7 @@ nimi,sin,nimisin
 n,n,nnn
 ala,luka,noka
 anpa,sijelo,noka
+n,u,nu
 kute,nimi,o
 lawa,nimi,o
 nimi,sina,o
@@ -218,6 +226,7 @@ kiwen,kiwen,tomo
 leko,leko,tomo
 meli,mije,tonsi
 wan,wan,tu
+awen,nimi,u
 jan,olin,unpa
 kulupu,lape,unpa
 ijo,toki,uta
