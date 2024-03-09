@@ -47,6 +47,8 @@ lon,tawa,kama
 ma,tawa,kama
 ni,tawa,kama
 ma,soweli,kasi
+lili,oke,ke
+lili,oki,ke
 nasin,ni,ken
 ala,weka,kepeken
 jan,kule,kese
@@ -66,6 +68,7 @@ kon,mesikeke,konwe
 lipu,nimi,ku
 lipu,tu,ku
 kipisi,walo,kule
+pona,pona,kulijo
 jan,jan,kulupu
 ijo,kalama,kute
 ante,tan,la
@@ -171,9 +174,11 @@ ala,lukin,pimeja
 ala,walo,pimeja
 ala,open,pini
 moli,tenpo,pini
+tawa,tomo,pingo
 lili,soweli,pipi
 ala,insa,poka
 ilo,insa,poki
+musi,palisa,polinpin
 ala,ike,pona
 lon,weka,powe
 lipu,toki,pu
@@ -211,6 +216,7 @@ ala,lili,suli
 open,tenpo,suno
 seli,seli,suno
 lipu,ma,supa
+lawa,soweli,sutopatikuna
 ala,jaki,suwi
 moku,pona,suwi
 mama,nimi,tan
