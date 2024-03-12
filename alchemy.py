@@ -17,7 +17,7 @@ def import_combos():
     with open('combos.csv') as file:
         reader = csv.reader(file)
         for line in reader:
-            combo = tuple(sorted((line[0], line[1])))
+            combo = tuple(sorted((line[0].replace(" ", ""), line[1].replace(" ", ""))))
             combine[combo] = line[2]
             elements.append(line[2])
     global duplicate
