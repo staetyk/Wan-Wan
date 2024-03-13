@@ -20,3 +20,4 @@ def display(path: tuple[int, ...]) -> str:
         out += list(recipes.keys())[x][1] + "\u001b[m = \u001b[1m"
         out += list(recipes.values())[x] + "\u001b[m\n"
     out = out.rstrip("\n")
+    return out
