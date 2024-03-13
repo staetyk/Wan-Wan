@@ -1,6 +1,5 @@
 # A simple infintely expandable alchemy sim :)
 import csv
-from os import dup
 from time import sleep
 
 starting = ['ala', 'ijo']
