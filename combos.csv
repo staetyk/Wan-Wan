@@ -37,6 +37,7 @@ meso,nasin,insa
 insa,toki,isipin
 ala,suwi,jaki
 moku,tenpo,jaki
+moku,suwi,jami
 sona,soweli,jan
 sama,tu,jasima
 kule,suno,jelo
@@ -44,9 +45,11 @@ insa,luka,jo
 telo,soweli,kala
 pali,uta,kalama
 soweli,toki,kalama
+kalama,mani,kalamarr
 lon,tawa,kama
 ma,tawa,kama
 ni,tawa,kama
+ala,lawa,kamalawala
 ma,soweli,kasi
 lili,oke,ke
 lili,oki,ke
@@ -164,12 +167,14 @@ kala,moku,omekapo
 ante,jan,ona
 ala,pini,open
 nasa,wawa,osawi
+jan,nimi,pa
 ala,kulupu,pakala
 pakala,pakala,pakola
 ala,lape,pali
 kiwen,suli,palisa
 kasi,ma,pan
 jo,sina,pana
+ike,telo,peto
 kipisi,nimi,pi
 ala,sona,pilin
 meso,sijelo,pilin
@@ -229,10 +234,12 @@ awen,poka,taki
 mama,nimi,tan
 ante,nimi,taso
 noka,pali,tawa
+nimi,open,te
 kiwen,seli,telo
 kon,lete,telo
 moku,nasa,telo
 ante,nasin,tenpo
+nimi,pini,to
 kalama,sona,toki
 nimi,nimi,toki
 kiwen,kiwen,tomo
@@ -242,6 +249,7 @@ wan,wan,tu
 awen,nimi,u
 jan,olin,unpa
 kulupu,lape,unpa
+laso,loje,unu
 ijo,toki,uta
 kalama,moli,utala
 ma,moli,utala
