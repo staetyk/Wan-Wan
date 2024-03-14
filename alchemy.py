@@ -5,7 +5,6 @@ from time import sleep
 starting = ['ala', 'ijo']
 unlocked = starting.copy()
 combine = {}
-duplicate = 0
 score = 0
 elements = []
 recipes = []
@@ -19,8 +18,7 @@ def import_combos():
             combo = tuple(sorted((line[0].replace(" ", ""), line[1].replace(" ", ""))))
             combine[combo] = line[2]
             elements.append(line[2])
-    global duplicate
-    duplicate = len(elements) - len(set(elements))
+    elements += starting
 
 def find_match(a, b):
     if a in unlocked and b in unlocked:
@@ -44,9 +42,9 @@ def find_match(a, b):
 
 import_combos()
 
-while len(unlocked) < len(combine)-duplicate:
+while len(unlocked) < len(set(elements)):
     #print('-'*20)
-    print('\u001b[1;4mAvailable Words ({}/{}):\u001b[22;24m'.format(len(unlocked), len(combine)-duplicate))
+    print('\u001b[1;4mAvailable Words ({}/{}):\u001b[22;24m'.format(len(unlocked), len(set(elements))))
     print("\u001b[3m", end = "")
     print(*unlocked, sep=', ', end = "\u001b[23m\n")
     a = input('\n\u001b[1mInput One: \u001b[22m').lower()
