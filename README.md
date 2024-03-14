@@ -7,7 +7,7 @@ Combine words to make more words! Try to find them all!
 ### Resources:
 * [nimi.li](https://nimi.li/)
 
-    *Any missing words will appear if you don't filter, but not all of *those* words are included.*
+    *This game does not use every word in this list, but this list includes every word in this game.*
 
 ### Credit:
 * [Original Code](https://github.com/vZekii/alchemy)
