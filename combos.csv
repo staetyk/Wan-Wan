@@ -4,12 +4,13 @@ kalama,musi,aaa
 jaki,soweli,akesi
 lukin,utala,alasa
 mute,mute,ale
+toki,weka,alente
 ale,ante,ali
+ala,la,alu
 ala,sewi,anpa
 lon,nasin,anpa
 ala,ni,ante
 ala,sama,ante
-ike,pona,ante
 jaki,suwi,ante
 lete,seli,ante
 lili,suli,ante
@@ -21,6 +22,7 @@ lili,pilin,apeja
 ala,tawa,awen
 nasin,sama,awen
 nimi,tu,e
+ike,pona,eliki
 kulupu,nimi,en
 mute,pona,epiku
 mani,pana,esun
@@ -42,10 +44,13 @@ sona,soweli,jan
 sama,tu,jasima
 kule,suno,jelo
 insa,luka,jo
+mu,waso,jonke
+ala,wile,jule
 telo,soweli,kala
 pali,uta,kalama
 soweli,toki,kalama
 kalama,mani,kalamarr
+kasi,suli,kalijopilale
 lon,tawa,kama
 ma,tawa,kama
 ni,tawa,kama
@@ -64,6 +69,7 @@ kasi,moku,kili
 nimi,sama,kin
 ala,ale,kipisi
 ala,ali,kipisi
+alasa,soweli,kisa
 ijo,ma,kiwen
 lete,telo,kiwen
 kiwen,telo,ko
@@ -88,6 +94,7 @@ ala,sike,leko
 linja,selo,len
 ala,seli,lete
 nimi,wan,li
+kule,kulupu,likujo
 ala,suli,lili
 ala,suli,lili
 ijo,suwi,lili
@@ -147,6 +154,7 @@ ala,lupa,nena
 anpa,noka,ni
 kulupu,sitelen,nimi
 nimi,sin,nimisin
+kisa,mu,nja
 n,n,nnn
 ala,luka,noka
 anpa,sijelo,noka
@@ -171,11 +179,13 @@ ala,pini,open
 nasa,wawa,osawi
 jan,nimi,pa
 ala,kulupu,pakala
+pini,tawa,pake
 pakala,pakala,pakola
 ala,lape,pali
 kiwen,suli,palisa
 kasi,ma,pan
 jo,sina,pana
+kasi,laso,peta
 ike,telo,peto
 kipisi,nimi,pi
 ala,sona,pilin
@@ -197,6 +207,7 @@ lipu,toki,pu
 lipu,wan,pu
 pona,toki,pu
 pona,sitelen,pu
+awen,suli,puwa
 ala,ante,sama
 nimi,wile,samu
 nimisin,wile,samu
