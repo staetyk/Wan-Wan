@@ -13,4 +13,4 @@ Combine words to make more words! Try to find them all!
 * [Original Code](https://github.com/vZekii/alchemy)
 
 ### Future:
-- Find shortest path to word
+- Find shortest path to word from game
