@@ -11,3 +11,6 @@ Combine words to make more words! Try to find them all!
 
 ### Credit:
 * [Original Code](https://github.com/vZekii/alchemy)
+
+### Future:
+* Hints
