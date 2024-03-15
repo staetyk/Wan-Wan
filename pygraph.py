@@ -15,7 +15,7 @@ class node:
             other.parents.add(self.id)
         else:
             self.children.add(other)
-            pointers[other].parents.add(self.id)
+            pointers[other].parents.add(self.id) # type: ignore
 
     def __radd__(self, other: int):
         self.parents.add(other)
@@ -33,6 +33,6 @@ class nimi(node):
 class nasin(node):
     def __init__(self, words: tuple[str, str, str]):
         super().__init__()
-        ale[words[0]]+ self
+        ale[words[0]] + self
         ale[words[1]] + self
         self + ale[words[2]]
