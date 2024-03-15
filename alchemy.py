@@ -1,6 +1,7 @@
 # A simple infintely expandable alchemy sim :)
 import csv
 from time import sleep
+from shortest import kepeken
 
 starting = ['ala', 'ijo']
 unlocked = starting.copy()
@@ -48,6 +49,9 @@ while len(unlocked) < len(set(elements)):
     print("\u001b[3m", end = "")
     print(*unlocked, sep=', ', end = "\u001b[23m\n")
     a = input('\n\u001b[1mInput One: \u001b[22m').lower()
+    if a == "?":
+        kepeken()
+        continue
     b = input('\u001b[1mInput Two: \u001b[22m').lower()
     find_match(a, b)
     score += 1

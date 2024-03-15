@@ -1,6 +1,7 @@
 import alchemy
 from alchemy import combine, elements
 from pygraph import *
+from time import sleep
 
 alchemy.import_combos()
 
@@ -57,5 +58,17 @@ def lukin(target: str, current: list[str] = alchemy.starting):
         recipe = list(pointers[x].parents)
         recipe.append(pointers[x].children[0])
         steps.append(tuple((str(recipe[i]) for i in range(3))))
-    
+
     print(*("{}. \u001b[1m{}\u001b[m + \u001b[1m{}\u001b[m → \u001b[1m{}\u001b[m".format(i, *steps[i]) for i in range(len(steps))), sep = "\n")
+
+def kepeken():
+    print("\u001b[2J\u001b[H\u001b[m", end = "")
+    target = input("\u001b[1mTarget Word: \u001b[22m").replace(" ", "")
+    try:
+        lukin(target)
+    except:
+        print('\n\u001b[1;38;2;255;0;0mInvalid word used.', end = '\u001b[m\n')
+        sleep(1.5)
+        return
+    input()
+    return
