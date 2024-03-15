@@ -17,7 +17,7 @@ class nimi(node):
         super().__init__()
         self.word = word
 
-    __str__ = lambda self: self.word
+    def __str__(self): return self.word
 
 class nasin(node):
     def __init__(self, words: tuple[nimi, nimi, nimi]):
