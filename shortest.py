@@ -1,9 +1,6 @@
-import alchemy
-from alchemy import combine, elements
+from alchemy import combine, elements, unlocked
 from pygraph import *
 from time import sleep
-
-alchemy.import_combos()
 
 for x in elements:
     nimi(x)
@@ -12,14 +9,14 @@ for x, y in combine.items():
 
 cache = {}
 path = []
-def alasa(target: str, current: list[str] = alchemy.starting, _og: bool = True) -> set | list:
+def alasa(target: str, current: list[str] = unlocked, _og: bool = True) -> set | list:
+    global cache
+    global path
     if target in current: return set()
     elif ale[target] in cache: return cache[ale[target]]
         
     crnt = [pointers[ale[x]] for x in current]
     trgt = pointers[ale[target]]
-    global cache
-    global path
     if _og:
         for x in crnt:
             cache[x.id] = set()
@@ -46,7 +43,7 @@ def alasa(target: str, current: list[str] = alchemy.starting, _og: bool = True) 
         out = cache[trgt.id]
     return out
 
-def lukin(target: str, current: list[str] = alchemy.starting):
+def lukin(target: str, current: list[str] = unlocked):
     try:
         data = alasa(target, current) # type: list[int] # type: ignore
     except ValueError:
@@ -56,19 +53,23 @@ def lukin(target: str, current: list[str] = alchemy.starting):
     data = data[::-1]
     for x in data:
         recipe = list(pointers[x].parents)
-        recipe.append(pointers[x].children[0])
-        steps.append(tuple((str(recipe[i]) for i in range(3))))
+        if len(recipe) == 1:
+            recipe += recipe
+        recipe.append(tuple(pointers[x].children)[0])
+        steps.append(tuple((str(pointers[recipe[i]]) for i in range(3))))
 
-    print(*("{}. \u001b[1m{}\u001b[m + \u001b[1m{}\u001b[m → \u001b[1m{}\u001b[m".format(i, *steps[i]) for i in range(len(steps))), sep = "\n")
+    print(*("{}. \u001b[1m{}\u001b[m + \u001b[1m{}\u001b[m → \u001b[1m{}\u001b[m".format(i + 1, *steps[i]) for i in range(len(steps))), sep = "\n")
 
 def kepeken():
     print("\u001b[2J\u001b[H\u001b[m", end = "")
     target = input("\u001b[1mTarget Word: \u001b[22m").replace(" ", "")
-    try:
+    """try:
         lukin(target)
     except:
         print('\n\u001b[1;38;2;255;0;0mInvalid word used.', end = '\u001b[m\n')
         sleep(1.5)
-        return
+        return"""
+    lukin(target)
     input()
+    print("\u001b[2J\u001b[H\u001b[m", end = "")
     return

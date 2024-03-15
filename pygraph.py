@@ -10,7 +10,7 @@ class node:
         pointers.append(self)
 
     def __add__(self, other: "node | int"):
-        if isinstance(other, "node"):
+        if isinstance(other, type(self)):
             self.children.add(other.id)
             other.parents.add(self.id)
         else:
@@ -33,6 +33,6 @@ class nimi(node):
 class nasin(node):
     def __init__(self, words: tuple[str, str, str]):
         super().__init__()
-        ale[words[0]] + self
+        ale[words[0]]+ self
         ale[words[1]] + self
         self + ale[words[2]]

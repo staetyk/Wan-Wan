@@ -1,5 +1,5 @@
 modules = ["python-3.10:v18-20230807-322e88b"]
-run = "python3 alchemy.py"
+run = "python3 main.py"
 
 [nix]
 channel = "stable-23_05"
@@ -11,5 +11,5 @@ language = "python3"
 requiredFiles = [".replit", "replit.nix"]
 
 [deployment]
-run = ["sh", "-c", "python3 alchemy.py"]
+run = ["sh", "-c", "python3 main.py"]
 deploymentTarget = "cloudrun"
