@@ -9,7 +9,7 @@ class node:
         self.id = len(pointers)
         pointers.append(self)
 
-    def __add__(self, other: "node" | int):
+    def __add__(self, other: "node | int"):
         if isinstance(other, "node"):
             self.children.add(other.id)
             other.parents.add(self.id)
