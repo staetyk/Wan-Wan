@@ -1,16 +1,21 @@
 import csv
 from alchemy import unlocked, elements, recipes, combine
 
+klang = False
+def kul_language(l: bool):
+    global klang
+    klang = l
+
 groups = {}
 with open("categories.csv", "r") as file:
     reader = csv.reader(file)
     for line in reader:
-        start = f"\u001b[{line[1]}m"
-        end = f"\u001b[{line[2]}m"
+        start = f"\u001b[{line[2]}m"
+        end = f"\u001b[{line[3]}m"
         look = start + "{}" + end
-        groups[line[0]] = {
+        groups[line[~ klang]] = {
             "look" : look,
-            "words" : set(line[3:]),
+            "words" : set(line[4:]),
             "done" : False
         }
 
@@ -32,17 +37,18 @@ def pana():
     print("\u001b[2J\u001b[H\u001b[m", end = "")
     out = ""
     for x,y in groups.items():
+        title = ("kulupu {}" if klang else "{} Words")
         if y["done"]:
-            out += f"\t• sina jo e \u001b[1;3m{y['look'].format(f'kulupu {x}')}\u001b[22;23m ale a!\n"
+            out += f"\t• " + ("sina jo e " if klang else "You have all ") + "\u001b[1;3m{y['look'].format(title.format(x))}\u001b[22;23m{(' ale a' if klang)}!\n"
     if len(unlocked) == len(set(elements)):
-        out += f"\t• sina jo e \u001b[1;3;38;2;255;228;18mnimi ale\u001b[22;23;39m a!\n"
+        out += f"\t• " + ("sina jo e " if klang else "You have ") + f"\u001b[1;3;38;2;255;228;18m{('nimi ale' if klang else 'All Words')}\u001b[22;23;39m{(' a' if klang)}!\n"
     if len(set(recipes)) == len(combine):
-        out += f"\t• sina jo e \u001b[1;3;38;2;255;228;18mnasin ale\u001b[22;23;39m a!"
+        out += f"\t• " + ("sina jo e " if klang else "You have ") + f"\u001b[1;3;38;2;255;228;18m{('nasin ale' if klang else 'All Recipes')}\u001b[22;23;39m{(' a' if klang)}!"
     out = out.rstrip("\n")
     if out == "":
-        out = "\u001b[2;3msina jo ala e pali pini tenpo sama.\u001b[22;23m"
+        out = "\u001b[2;3m" + ("sina jo ala e pali pini tenpo sama" if klang else "You don't have any achievements yet") + ".\u001b[22;23m"
     else:
-        out = "f\u001b[1;3mpali pini sina:\u001b[m\n" + out
+        out = "f\u001b[1m" + ("pali pini sina" if klang else "Your Achievements") + ":\u001b[m\n" + out
     print(out)
     input("\u001b[8m")
     print("\u001b[2J\u001b[H\u001b[m", end = "")
