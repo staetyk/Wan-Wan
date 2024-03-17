@@ -25,18 +25,18 @@ def find_match(a, b):
         try:
             recipes.append(tuple(sorted((a,b))))
             out = combine[tuple(sorted((a, b)))]
-            print('\n\u001b[1;38;2;0;200;0mCombination Success!!!', end = "\u001b[22m")
+            print('\n\u001b[1;38;2;0;200;0mpona!', end = "\u001b[22m")
             print()
             if out not in unlocked:
-                print('New word unlocked: ' + out, end = '\u001b[m\n')
+                print('nimi sin: ' + out, end = '\u001b[m\n')
                 unlocked.append(out)
             else:
-                print('Word already unlocked: ' + out, end = '\u001b[m\n')
+                print('nimi majuna: ' + out, end = '\u001b[m\n')
             
         except KeyError:
-            print('\n\u001b[1;38;2;255;0;0mCombination Failed!', end = '\u001b[m\n')
+            print('\n\u001b[1;38;2;255;0;0mike!', end = '\u001b[m\n')
     else:
-        print('\n\u001b[1;38;2;255;0;0mInvalid word used.', end = '\u001b[m\n')
+        print('\n\u001b[1;38;2;255;0;0mnimi ike.', end = '\u001b[m\n')
     sleep(1.5)
     print("\u001b[2J\u001b[H\u001b[m", end = "")
 

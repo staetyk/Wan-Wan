@@ -49,7 +49,7 @@ def lukin(target: str, current: list[str] = unlocked):
     try:
         data = alasa(target, current) # type: list[int] # type: ignore
     except ValueError:
-        raise Exception(target + " is not reachable.")
+        raise Exception("sina ken ala jo e " + target + ".")
 
     steps = []
     #data = data[::-1]
@@ -64,12 +64,12 @@ def lukin(target: str, current: list[str] = unlocked):
 
 def kepeken():
     print("\u001b[2J\u001b[H\u001b[m", end = "")
-    target = input("\u001b[1mTarget Word: \u001b[22m").replace(" ", "")
+    target = input("\u001b[1mnimi wile: \u001b[22m").replace(" ", "")
     print("\u001b[2J\u001b[H\u001b[m", end = "")
     try:
         lukin(target)
     except:
-        print('\n\u001b[1;38;2;255;0;0mInvalid word used.', end = '\u001b[m\n')
+        print('\n\u001b[1;38;2;255;0;0mnimi ike.', end = '\u001b[m\n')
         sleep(1.5)
         return
     input()

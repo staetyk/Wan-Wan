@@ -14,7 +14,7 @@ with open("categories.csv", "r") as file:
             "done" : False
         }
 
-def kule(*words: tuple[str, ...]):
+def kule(words: list[str]):
     out = []
     for word in words:
         w = word
@@ -33,12 +33,16 @@ def pana():
     out = ""
     for x,y in groups.items():
         if y["done"]:
-            out += f"•sina jo e {y['look'].format(f'kulupu {x}')} ale a!\n"
+            out += f"\t• sina jo e \u001b[1;3m{y['look'].format(f'kulupu {x}')}\u001b[22;23m ale a!\n"
     if len(unlocked) == len(set(elements)):
-        out += f"•sina jo e \u001b[1mnimi ale\u001b[22m a!\n"
+        out += f"\t• sina jo e \u001b[1;3;38;2;255;228;18mnimi ale\u001b[22;23;39m a!\n"
     if len(set(recipes)) == len(combine):
-        out += f"•sina jo e \u001b[1mnasin ale\u001b[22m a!"
+        out += f"\t• sina jo e \u001b[1;3;38;2;255;228;18mnasin ale\u001b[22;23;39m a!"
     out = out.rstrip("\n")
+    if out == "":
+        out = "\u001b[2;3msina jo ala e pali pini tenpo sama.\u001b[22;23m"
+    else:
+        out = "f\u001b[1;3mpali pini sina:\u001b[m\n" + out
     print(out)
-    input()
+    input("\u001b[8m")
     print("\u001b[2J\u001b[H\u001b[m", end = "")
