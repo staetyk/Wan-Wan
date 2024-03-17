@@ -2,20 +2,22 @@ from alchemy import *
 #from shortest import kepeken
 from kulupu import kule, pana, pini
 
+import tutorial
+
 for endgame in range(2):
     while len(unlocked) < len(set(elements)) or endgame:
         #print('-'*20)
         print('\u001b[1;4mnimi ken ({}/{}):\u001b[22;24m'.format(len(unlocked), len(set(elements))))
         print("\u001b[3m", end = "")
         print(*kule(unlocked), sep=', ', end = "\u001b[23m\n")
-        a = input('\n\u001b[1mnimi wan: \u001b[22m').lower()
+        a = input('\n\u001b[1mnimi nanpa wan: \u001b[22m').lower()
         #if a == "?":
             #kepeken()
             #continue
         if a == "!":
             pana()
             continue
-        b = input('\u001b[1mnimi tu: \u001b[22m').lower()
+        b = input('\u001b[1mnimi nanpa tu: \u001b[22m').lower()
         find_match(a, b)
         pini()
         score += 1
