@@ -51,7 +51,7 @@ def pana():
     if out == "":
         out = "\u001b[2;3m" + ("sina jo ala e pali pini tenpo sama" if klang else "You don't have any achievements yet") + ".\u001b[22;23m"
     else:
-        out = "f\u001b[1m" + ("pali pini sina" if klang else "Your Achievements") + ":\u001b[m\n" + out
+        out = "\u001b[1m" + ("pali pini sina" if klang else "Your Achievements") + ":\u001b[m\n" + out
     print(out)
     input("\u001b[8m")
     print("\u001b[2J\u001b[H\u001b[m", end = "")
