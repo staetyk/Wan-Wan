@@ -1,3 +1,18 @@
+from time import sleep
+
+print("""\u001b[38;2;255;0;0;48;2;0;0;100m                      
+       ██        ██   
+     ████      ████   
+   ██  ██    ██  ██   
+       ██        ██   
+       ██        ██   
+       ██        ██   
+       ██        ██   
+                      
+   \u001b[38;2;255;255;0;1m  MUSI WAN WAN     
+                      \u001b[39;49;22m""", end = "" )
+sleep(2)
+
 lang = ""
 while lang not in ["en", "tp", "english", "tokipona"]:
     print("\u001b[2J\u001b[H\u001b[m", end = "")
