@@ -30,6 +30,8 @@ kul_language(lang)
 import tutorial
 tutorial.tut_language(lang)
 tutorial.use()
+from sona import define, dic_language
+dic_language(lang)
 
 def loadsave():
     with open("awen.csv", "r") as file:
@@ -103,6 +105,9 @@ def play():
                 sure = sure == "yes" or sure == "lon"
                 print("\u001b[2J\u001b[H\u001b[m", end = "")
                 if sure: endgame = loadsave()
+                continue
+            elif a == "?":
+                define()
                 continue
             b = input('\u001b[2m' + ("nimi nanpa tu" if lang else "Second Word") + ': \u001b[22m').lower()
             alchemy.find_match(a, b)
