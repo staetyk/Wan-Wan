@@ -11,6 +11,7 @@ o wan e nimi tan tomo e nimi sin a! o alasa alasa pini e ona ale a!
 
 ### jan pali sin:
 * [ilo sona mama](https://github.com/vZekii/alchemy)
+* [nimi.li](https://nimi.li/)
 
 ### tenpo kama:
 * sona lili
