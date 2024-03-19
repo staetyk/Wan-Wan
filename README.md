@@ -12,6 +12,7 @@ Combine words to make more words! Try to find them all!
 ### Credit:
 * [Original Code](https://github.com/vZekii/alchemy)
 * [nimi.li](https://nimi.li/)
+* Everything else: jan Pa (me)
 
 ### Future:
 * Hints
