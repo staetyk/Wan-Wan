@@ -15,5 +15,5 @@ Combine words to make more words! Try to find them all!
 * Everything else: jan Pa (me)
 
 ### Future:
-* Hints
 * More Words
+* Hints (Maybe)
