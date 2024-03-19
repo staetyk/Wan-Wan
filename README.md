@@ -14,5 +14,4 @@ Combine words to make more words! Try to find them all!
 
 ### Future:
 * Hints
-* Saving
 * More Words

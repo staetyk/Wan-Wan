@@ -25,6 +25,14 @@ def import_combos():
             elements.append(line[2])
     elements += starting
 
+def loada(unlockedL, scoreL, recipesL):
+    global unlocked
+    global score
+    global recipes
+    unlocked = unlockedL
+    score = scoreL
+    recipes = recipesL
+
 def find_match(a, b):
     if a in unlocked and b in unlocked:
         try:
