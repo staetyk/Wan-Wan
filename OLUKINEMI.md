@@ -15,4 +15,5 @@ o wan e nimi tan tomo e nimi sin a! o alasa alasa pini e ona ale a!
 * ante ale: jan Pa (mi)
 
 ### tenpo kama:
-* nimi namako
+* lipu awen mute
+* pona e .gitignore e awen.csv

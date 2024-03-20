@@ -15,4 +15,5 @@ Combine words to make more words! Try to find them all!
 * Everything else: jan Pa (me)
 
 ### Future:
-* More Words
+* Multiple save files
+* Fix .gitignore and awen.csv
