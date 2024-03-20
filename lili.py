@@ -11,11 +11,11 @@ taken = set()
 def options():
     out = set()
     for x, y in alchemy.combine.items():
-        if y not in out & \
-        y not in taken & \
-        y not in alchemy.unlocked & \
-        x[0] in alchemy.unlocked & \
-        x[1] in alchemy.unlocked:
+        if (y not in out) & \
+        (y not in taken) & \
+        (y not in alchemy.unlocked) & \
+        (x[0] in alchemy.unlocked) & \
+        (x[1] in alchemy.unlocked):
             out.add(y)
     return out
 
@@ -27,7 +27,7 @@ def hint():
     else:
         opt = tuple(opt)
         word = opt[randint(0, len(opt) - 1)]
-        print(f"\u001b[1m{word}\u001b[22m")
+        print(f"\u001b[3m{word}\u001b[23m")
         global taken
         taken.add(word)
     input("\u001b[8m")
