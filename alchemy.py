@@ -34,6 +34,7 @@ def loada(unlockedL, scoreL, recipesL):
     recipes = recipesL
 
 def find_match(a, b):
+    a, b = a.lower().replace(" ", ""), b.lower().replace(" ", "")
     if a in unlocked and b in unlocked:
         try:
             recipes.append(tuple(sorted((a,b))))

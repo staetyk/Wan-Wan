@@ -55,7 +55,7 @@ def savegame(endgame):
         reader = csv.writer(file)
         reader.writerow(list(alchemy.unlocked))
         reader.writerow([str(endgame), str(alchemy.score)])
-        reader.writerow(["{} {}".format(x) for x in alchemy.recipes])
+        reader.writerow(["{} {}".format(*x) for x in alchemy.recipes])
 
 def restart():
     with open("awen.csv", "w") as file:
@@ -87,7 +87,7 @@ def play():
                 pana()
                 continue
             elif a == "*":
-                savegame()
+                savegame(endgame)
                 print("\u001b[2J\u001b[H\u001b[m", end = "")
                 continue
             elif a == "***":
