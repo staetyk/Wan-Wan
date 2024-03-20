@@ -32,6 +32,8 @@ tutorial.tut_language(lang)
 tutorial.use()
 from sona import define, dic_language
 dic_language(lang)
+from lili import hint, lil_language
+lil_language(lang)
 
 def loadsave():
     with open("awen.csv", "r") as file:
@@ -108,6 +110,9 @@ def play():
                 continue
             elif a == "?":
                 define()
+                continue
+            elif a == "??":
+                hint()
                 continue
             b = input('\u001b[2m' + ("nimi nanpa tu" if lang else "Second Word") + ': \u001b[22m').lower()
             alchemy.find_match(a, b)

@@ -16,4 +16,3 @@ Combine words to make more words! Try to find them all!
 
 ### Future:
 * More Words
-* Hints (Maybe)
