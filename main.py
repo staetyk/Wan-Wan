@@ -87,7 +87,7 @@ def play():
                 pana()
                 continue
             elif a == "*":
-                save()
+                savegame()
                 print("\u001b[2J\u001b[H\u001b[m", end = "")
                 continue
             elif a == "***":
