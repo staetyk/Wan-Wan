@@ -16,4 +16,3 @@ Combine words to make more words! Try to find them all!
 
 ### Future:
 * Multiple save files
-* Fix .gitignore and awen.csv
