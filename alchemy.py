@@ -29,7 +29,7 @@ def loada(unlockedL, scoreL, recipesL):
     global unlocked
     global score
     global recipes
-    unlocked = list(unlockedL)
+    unlocked = unlockedL
     score = scoreL
     recipes = recipesL
 

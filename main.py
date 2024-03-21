@@ -49,7 +49,7 @@ def loadsave():
     with open("awen.csv", "r") as file:
         reader = csv.reader(file)
         awen = [x for x in reader]
-        unlockedL = set(awen[0])
+        unlockedL = list(awen[0])
         endgameL = int(awen[1][0])
         scoreL = int(awen[1][1])
         try:
