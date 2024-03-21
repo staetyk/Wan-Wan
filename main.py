@@ -35,7 +35,17 @@ dic_language(lang)
 from lili import hint, lil_language
 lil_language(lang)
 
+def makefile():
+    try:
+        file = open("awen.csv", "x")
+        file.close()
+    except:
+        pass
+    else:
+        restart()
+
 def loadsave():
+    makefile()
     with open("awen.csv", "r") as file:
         reader = csv.reader(file)
         awen = [x for x in reader]
