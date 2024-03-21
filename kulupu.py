@@ -16,7 +16,7 @@ def lanpan():
             start = f"\u001b[{line[2]}m"
             end = f"\u001b[{line[3]}m"
             look = start + "{}" + end
-            groups[line[not klang]] = {
+            groups[line[int(~ klang)]] = {
                 "look" : look,
                 "words" : set(line[4:]),
                 "done" : False
@@ -34,7 +34,7 @@ def kule(words: list[str]):
 def pini():
     global groups
     for x,y in groups.items():
-        if not y["done"] and y["words"].issubset(unlocked): y["done"] = True
+        y["done"] = y["words"] <= set(unlocked)
 
 def pana():
     print("\u001b[2J\u001b[H\u001b[m", end = "")
