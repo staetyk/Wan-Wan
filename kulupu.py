@@ -16,11 +16,11 @@ def lanpan():
             start = f"\u001b[{line[2]}m"
             end = f"\u001b[{line[3]}m"
             look = start + "{}" + end
-            groups[line[int(~ klang)]] = {
+            groups.update({line[1 - int(klang)] : {
                 "look" : look,
                 "words" : set(line[4:]),
                 "done" : False
-            }
+            }})
 
 def kule(words: list[str]):
     out = []
